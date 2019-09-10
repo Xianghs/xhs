@@ -55,7 +55,7 @@ func SendMsg(conn net.Conn) {
 			os.Exit(0)
 		}
 		if len(input) > 0 {
-			msg := "AAA" + ":" + input
+			msg := "baba" + ":" + input
 			_, err := conn.Write([]byte(msg))
 			if err != nil {
 				conn.Close()
